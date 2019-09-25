@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/firstname"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/etfirstname"
+        android:layout_alignParentLeft="true"
+        android:text="First Name" />
+
+    <TextView
+        android:id="@+id/lastname"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/etlastname"
+        android:layout_alignParentLeft="true"
+        android:text="Last Name:" />
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/etusername"
+        android:layout_alignParentLeft="true"
+        android:text="Username:" />
+
+    <TextView
+        android:id="@+id/password"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/etpassword"
+        android:layout_alignParentLeft="true"
+        android:text="Password:" />
+
+    <TextView
+        android:id="@+id/reenter"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/etreenter"
+        android:layout_alignParentLeft="true"
+        android:text="Re-Enter Password:" />
+
+
+    <EditText
+        android:id="@+id/etfirstname"
+        android:layout_width="215dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@id/firstname" />
+
+    <EditText
+        android:id="@+id/etlastname"
+        android:layout_width="215dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etfirstname"
+        android:layout_marginTop="-5dp"
+        android:layout_toRightOf="@id/lastname" />
+
+    <EditText
+        android:id="@+id/etusername"
+        android:layout_width="215dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etlastname"
+        android:layout_marginTop="-5dp"
+        android:layout_toRightOf="@id/username" />
+
+    <EditText
+        android:id="@+id/etpassword"
+        android:layout_width="215dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etusername"
+        android:layout_marginTop="0dp"
+        android:layout_toRightOf="@id/lastname"
+        android:hint="Atleast 6 characters " />
+
+    <EditText
+        android:id="@+id/etreenter"
+        android:layout_width="215dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etpassword"
+        android:layout_marginTop="0dp"
+        android:layout_toRightOf="@id/password" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create your CourseSeek Account"
+        android:layout_below="@id/etreenter"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button"
+        android:layout_marginTop="8dp"
+        android:text="Already have an account?" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button"
+        android:layout_alignRight="@id/textView2"
+        android:layout_alignBaseline="@id/textView2"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="-47dp"
+        android:text="Login"
+        android:textColor="#3F51B5" />
+
+</RelativeLayout>
