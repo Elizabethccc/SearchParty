@@ -15,6 +15,9 @@ public class Signup extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
+        
+        getSupportActionBar().setTitle("Sign Up");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         login=(TextView) findViewById(R.id.textView3);
         login.setOnClickListener(new View.OnClickListener(){
