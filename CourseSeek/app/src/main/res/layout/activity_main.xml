@@ -1,56 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:fillViewport="true">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical">
 
-    <LinearLayout
+<TextView
+    android:id="@+id/textView_title"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#00504A4A"
+    android:fontFamily="@font/alfa_slab_one"
+    android:paddingTop="30dp"
+    android:text="Course Seek"
+    android:textAlignment="center"
+    android:textSize="40sp" />
+
+    <Button
+        android:id="@+id/loginbtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:text="Login" />
 
-        <TextView
-            android:id="@+id/textView_title"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#00504A4A"
-            android:fontFamily="@font/alfa_slab_one"
-            android:paddingTop="30dp"
-            android:text="Course Seek"
-            android:textAlignment="center"
-            android:textSize="40sp" />
+    <Button
+        android:id="@+id/registerbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register" />
 
-        <TextView
-            android:id="@+id/textview_info"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:background="#006B6060"
-            android:padding="6dp"
-            android:text="blah blah blah list info about app"
-            android:textSize="24sp" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
 
         <LinearLayout
-            android:layout_height="wrap_content"
-        android:layout_width="match_parent"
-        android:background="@android:drawable/bottom_bar"
-        android:gravity="center_vertical">
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-            <Button
-                android:id="@+id/loginbtn"
-                android:layout_width="0dp"
+
+            <TextView
+                android:id="@+id/textview_info"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Login" />
+                android:background="#006B6060"
+                android:padding="6dp"
+                android:text="Body Text Body Text "
+                android:textSize="24sp" />
 
-            <Button
-                android:id="@+id/registerbtn"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Register" />
 
-    </LinearLayout>
-</LinearLayout>
+        </LinearLayout>
     </ScrollView>
+
+</LinearLayout>
