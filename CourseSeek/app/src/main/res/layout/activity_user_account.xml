@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5D6161"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textviewID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/etfirstname"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="30dp"
+        android:paddingBottom="10dp"
+        android:text="ID: "
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/textviewFirst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textviewID"
+        android:layout_alignBaseline="@+id/etlastname"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="9dp"
+        android:paddingBottom="10dp"
+        android:text="First Name:"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/textviewLast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textviewFirst"
+        android:layout_alignBaseline="@+id/etlastname"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="9dp"
+        android:paddingBottom="10dp"
+        android:text="Last Name:"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/textviewUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textviewLast"
+        android:layout_alignBaseline="@+id/etusername"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="13dp"
+        android:paddingBottom="10dp"
+        android:text="Username:"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/IDnum"
+        android:layout_width="215dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="-5dp"
+        android:layout_toRightOf="@id/textviewID"
+        android:paddingBottom="10dp"
+        android:textSize="25dp"
+        tools:layout_marginTop="30dp" />
+
+    <TextView
+        android:id="@+id/firstname"
+        android:layout_width="215dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/IDnum"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/textviewFirst"
+        android:paddingBottom="10dp"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/lastname"
+        android:layout_width="215dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/firstname"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/textviewLast"
+        android:paddingBottom="10dp"
+        android:textSize="25dp" />
+
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="215dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lastname"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/textviewUser"
+        android:paddingBottom="10dp"
+        android:textSize="25dp" />
+
+
+    <Button
+        android:id="@+id/editbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/username"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="26dp"
+        android:text="Edit Account" />
+
+
+</RelativeLayout>
