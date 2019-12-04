@@ -37,14 +37,14 @@ public class MainActivity extends AppCompatActivity {
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this,VideoActivity.class));
+                startActivity(new Intent(MainActivity.this,Login.class));
             }
         });
 
         signup = (Button) findViewById(R.id.registerbtn);
         signup.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, Signup.class));
+                startActivity(new Intent(MainActivity.this, YoutubeActivity.class));
             }
         });
 
