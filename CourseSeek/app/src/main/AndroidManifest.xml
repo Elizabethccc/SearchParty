@@ -13,7 +13,8 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
 
-        <activity android:name=".VideoActivity"></activity>
+        <activity android:name=".YoutubeActivity" />
+        <activity android:name=".VideoActivity" />
         <activity
             android:name=".UserAccount"
             android:parentActivityName=".MainActivity" />
